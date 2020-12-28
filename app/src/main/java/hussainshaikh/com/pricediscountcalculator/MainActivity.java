@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     Button process;
     EditText price;
     EditText discount;
-    TextView result;
+    TextView yourdiscount;
+    TextView yourAmount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
         price = (EditText) findViewById(R.id.price_tv);
         discount = (EditText) findViewById(R.id.discount_tv);
         process = (Button) findViewById(R.id.btn_process);
-        result = (TextView) findViewById(R.id.result_tv);
+
+        yourdiscount = (TextView) findViewById(R.id.yourDiscount);
+        yourAmount = (TextView) findViewById(R.id.pay_this_amount);
 
         process.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,9 +37,21 @@ public class MainActivity extends AppCompatActivity {
                 float percentage = Float.parseFloat(price.getText().toString());
                 float dis = percentage / 100;
                 float total = dis * Float.parseFloat(discount.getText().toString());
-                result.setText(Float.toString(total));
+
+                float amount = percentage - total;
+
+                //discoun Rs
+                float discount = total;
+                yourdiscount.setText(Float.toString(discount));
+
+                //amount Rs
+                yourAmount.setText(Float.toString(amount));
+
+
             }
         });
+
+        //code
 
 
 
