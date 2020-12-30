@@ -15,8 +15,9 @@
         android:paddingLeft="10dp"
         android:textColor="#000000"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColorHint="#000"
+        android:layout_marginRight="5dp"
         android:inputType="number"/>
 
     <EditText
@@ -27,8 +28,9 @@
         android:paddingLeft="10dp"
         android:textColor="#000000"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:textColorHint="#000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:inputType="number"/>
     
     <Button
@@ -55,8 +57,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Your discount"
-            android:textSize="25sp"
-            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textColor="#006064"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"/>
 
@@ -64,8 +66,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Your amount"
-            android:textSize="25sp"
-            android:layout_marginLeft="75dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="120dp"
             android:textColor="#000000"
             android:layout_marginTop="20dp" />
 
@@ -84,6 +86,7 @@
             android:text="00.00"
             android:textSize="25sp"
             android:layout_marginLeft="50dp"
+            android:textColor="#000000"
             android:layout_marginTop="10dp"/>
 
         <TextView
@@ -92,7 +95,8 @@
             android:layout_height="wrap_content"
             android:text="00.00"
             android:textSize="25sp"
-            android:layout_marginLeft="185dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="160dp"
             android:layout_marginTop="10dp"/>
 
 

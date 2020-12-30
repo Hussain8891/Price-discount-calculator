@@ -33,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
         process.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (price.getText().toString().isEmpty()){
+                    Toast.makeText(MainActivity.this, "Please enter price", Toast.LENGTH_SHORT).show();
+
+                }else if (discount.getText().toString().isEmpty()){
+                    Toast.makeText(MainActivity.this, "Please enter discount", Toast.LENGTH_SHORT).show();
+
+                }else {
                 Toast.makeText(MainActivity.this, "Process", Toast.LENGTH_SHORT).show();
                 float percentage = Float.parseFloat(price.getText().toString());
                 float dis = percentage / 100;
@@ -46,13 +53,10 @@ public class MainActivity extends AppCompatActivity {
 
                 //amount Rs
                 yourAmount.setText(Float.toString(amount));
-
+                }
 
             }
         });
-
-        //code
-
 
 
     }
